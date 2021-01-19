@@ -16,7 +16,7 @@ def get_mean(number_list):
 def get_median(number_list):
     median = 0
     number_list.sort()
-    if number_list % 2 == 0:
+    if len(number_list) % 2 == 0:
         median = number_list[len(number_list)//2 - 1]
     else:
         median = number_list[len(number_list)//2]
