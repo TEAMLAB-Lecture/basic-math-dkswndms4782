@@ -1,3 +1,6 @@
+import numpy as np
+
+
 def get_greatest(number_list):
     greatest_number = max(number_list)
     return greatest_number
@@ -9,7 +12,8 @@ def get_smallest(number_list):
 
 
 def get_mean(number_list):
-    mean = sum(number_list) / len(number_list)
+    mean = np.mean(number_list)
+    # mean = sum(number_list) / len(number_list)
     return mean
 
 
