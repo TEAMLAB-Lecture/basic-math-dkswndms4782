@@ -18,7 +18,8 @@ def get_mean(number_list):
 
 
 def get_median(number_list):
-    median = 0
+    median = np.median(number_list)
+    """
     number_list.sort()
     # 짝수면 가운데 두 자리수를 더한 후 나눠줘야해서 조건문으로 분류
     if len(number_list) % 2 == 0:
@@ -31,4 +32,5 @@ def get_median(number_list):
     else:
         # 홀수면 /2한 만큼의 몫이 인덱스가 됨
         median = number_list[len(number_list) // 2]
+    """
     return median
