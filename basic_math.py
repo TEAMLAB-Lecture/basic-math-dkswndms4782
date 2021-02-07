@@ -1,6 +1,3 @@
-import numpy as np
-
-
 def get_greatest(number_list):
     greatest_number = max(number_list)
     return greatest_number
@@ -12,14 +9,11 @@ def get_smallest(number_list):
 
 
 def get_mean(number_list):
-    mean = np.mean(number_list)
-    # mean = sum(number_list) / len(number_list)
+    mean = sum(number_list) / len(number_list)
     return mean
 
 
 def get_median(number_list):
-    median = np.median(number_list)
-    """
     number_list.sort()
     # 짝수면 가운데 두 자리수를 더한 후 나눠줘야해서 조건문으로 분류
     if len(number_list) % 2 == 0:
@@ -32,5 +26,4 @@ def get_median(number_list):
     else:
         # 홀수면 /2한 만큼의 몫이 인덱스가 됨
         median = number_list[len(number_list) // 2]
-    """
     return median
